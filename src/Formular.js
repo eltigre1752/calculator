@@ -1,14 +1,8 @@
 import React from "react";
-import "./App.scss";
+import "./styles/App.scss";
 
-class Formular extends React.Component {
-    render () {
-      return (
-        <div className = "formularScreen">
-          {this.props.formular}
-        </div>
-      )
-    }
+function Formular(props) {
+  return <div className="formularScreen">{props.formular}</div>;
 }
 
 export default Formular;

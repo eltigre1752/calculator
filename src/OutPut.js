@@ -1,14 +1,8 @@
 import React from "react";
-import "./App.scss";
+import "./styles/App.scss";
 
-class OutPut extends React.Component{
-    render() {
-      return (
-        <div className = "outPutScreen">
-          {this.props.currentValue}
-        </div>
-      )
-    }
+function OutPut(props) {
+  return <div className="outPutScreen">{props.currentValue}</div>;
 }
 
 export default OutPut;
